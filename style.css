@@ -1,6 +1,5 @@
 body {
    background-image: url('./tooth.jpg');
-   margin:0;
 }
 
 ul {
@@ -52,7 +51,30 @@ footer {
 
 img {
   margin-top: 170px;
-  margin-left: 60px;
+  margin-left: 40px;
   border-radius: 60px;
   opacity: 0.6;
+}
+
+.image {
+  width: 25%;
+  float: left;
+}
+
+.navigation {
+  margin-top: 230px;
+  width: 260px;
+  float: left;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 160px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
 }
