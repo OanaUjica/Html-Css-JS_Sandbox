@@ -1,5 +1,13 @@
 body {
-   background-image: url('./tooth.jpg');
+  background-image: url('./tooth.jpg');
+}
+
+.headerInfo {
+  margin-left: 340px;
+}
+
+.sectionHeader {
+  margin-top: 100px;
 }
 
 ul {
@@ -71,10 +79,22 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 50%;
-  margin-top: 160px;
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
+}
+
+.billsTable {
+  margin-top: 60px;
+}
+
+.headerTable {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  background-color: #5F9EA0;
+  opacity:0.8;
 }
