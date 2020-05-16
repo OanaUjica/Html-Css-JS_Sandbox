@@ -98,3 +98,32 @@ td, th {
   background-color: #5F9EA0;
   opacity:0.8;
 }
+
+.createNewPatientButton {
+  margin-left: 400px;
+  margin-bottom: 60px;
+}
+
+form {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+fieldset {
+  background-color: #D3D3D3;
+  width: 740px;
+}
+
+legend {
+  background-color: #87CEFA;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  opacity:0.8;
+}
+
+.legendCaseDetails {
+  background-color: #1E90FF;
+  opacity:0.8;
+}
