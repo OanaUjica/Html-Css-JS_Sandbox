@@ -28,109 +28,133 @@
       </nav>
     </header>
 
-    <form action="lab2.html" method="post"> <!-- method="GET sau POST" -->
-
-      <fieldset>
-        <legend>Patient details</legend>
-
-        <label for="name" style="padding-left: 15px; padding-right: 25px;">Name</label>
-        <input type="text" id="name" name="name" placeholder="Oana Raluca Alexandru" style="width: 400px;">
-        <label for="date" style="padding-left: 40px; padding-right: 10px;">Date</label>
-        <input type="date" id="date" name="date"><br><br>
-
-        <label for="address" style="padding-left: 15px; padding-right: 10px;">Address</label>
-        <input type="address" id="address" name="address" placeholder="str. Florilor" style="width: 648px;"><br><br>
-
-        <label for="city" style="padding-left: 15px; padding-right: 40px;">City</label>
-        <input type="text" id="city" name="city" placeholder="Cluj-Napoca" style="width: 260px;">
-        <label for="country" style="padding-left: 20px; padding-right: 10px;">Country</label>
-        <input type="text" id="country" name="country" placeholder="CJ" style="width: 44px;">
-        <label for="zipCode" style="padding-left: 15px; padding-right: 4px;">Zip Code</label>
-        <input type="text" id="zipCode" name="zipCode" placeholder="420024" style="width: 160px;"><br><br>
-
-        <label for="email" style="padding-left: 15px; padding-right: 26px;">Email</label>
-        <input type="email" id="email" name="email" placeholder="oana.alexandru@gmail.com" style="width: 400px;">
-        <label for="sex" style="padding-left: 50px; padding-right: 10px;">Sex</label>
-        <label for="male">F</label>
-        <input type="radio" id="sex" name="sex" value="female" checked="checked" style="margin-right: 20px;">
-        <label for="male">M</label>
-        <input type="radio" id="sex" name="sex" value="male"><br><br>
-
-        <label for="phone" style="padding-left: 15px; padding-right: 23px;">Phone</label>
-        <input type="text" id="phone" name="phone" placeholder="0264380636" style="width: 155px;">
-        <label for="mobile" style="padding-left: 20px; padding-right: 12px;">Mobile</label>
-        <input type="text" id="mobile" name="mobile" placeholder="0752102930" style="width: 155px;">
-        <label for="mobile" style="padding-left: 40px; padding-right: 12px;">CNP</label>
-        <input type="text" id="cnp" name="cnp" maxlength="13" style="width: 160px;"><br><br>
-      </fieldset>
-
-      <fieldset>
-        <legend class="legendCaseDetails">Case details</legend>
-
-        <label for="category" style="padding-left: 15px; padding-right: 9px;">Category</label>
-        <select name="category">
-          <option value="0" disabled="disabled" selected>No category</option>
-          <option value="1">Bridge</option>
-          <option value="2">Removable</option>
-          <option value="3">Single Unit</option>
-          <option value="4">Bridge Pontic</option>
-          <option value="5">Bridge Crown</option>
-          <option value="6">Missing Tooth</option>
-        </select>
-        <label for="restorationType" style="padding-left: 40px; padding-right: 10px;">Restoration Type</label>
-        <select name="restorationType">
-          <option value="0" readonly selected>No restoration type</option>
-          <option value="1">Crown Over Natural Abutment</option>
-          <option value="2">Crown Over Implant</option>
-          <option value="3">Corono-Radicular</option>
-          <option value="4">Veneer</option>
-          <option value="5">Inlay</option>
-          <option value="6">Onlay</option>
-          <option value="6">Temporary Single Unit Over Natural Abutment</option>
-          <option value="6">Temporary Single Unit Over Natural Implant</option>
-          <option value="6">Single Unit Wax-Up On Natural Abutment</option>
-          <option value="6">Single Unit Wax-Up On Natural Implant</option>
-        </select><br><br>
-
-        <label for="teeth" style="padding-left: 15px; padding-right: 32px;">Teeth</label>
-        <select name="teeth" id="teeth" size="5" multiple>
-          <option value="1">Upper Third Molar</option>
-          <option value="2">Upper Second Molar</option>
-          <option value="3" selected>Upper First Molar</option>
-          <option value="4">Upper Second Premolar"</option>
-          <option value="5">Upper First Premolar</option>
-          <option value="6">Upper Canine</option>
-          <option value="6">Upper Lateral Incisor</option>
-          <option value="6">Upper Central Incisor</option>
-          <option value="6">Lower Third Molar</option>
-          <option value="6">Lower Second Molar</option>
-          <option value="6">Lower First Molar</option>
-          <option value="6">Lower Second Premolar</option>
-          <option value="6">Lower First Premolar</option>
-          <option value="6">Lower Lateral Incisor</option>
-          <option value="6">Lower Central Incisor</option>
-        </select><br><br>
-
-        <label for="comment" style="padding-left: 15px; padding-right: 2px;">Comment</label>
-        <textarea rows="5" cols="89" name="comment" id="comment" placeholder="Please enter details about the new case"></textarea><br><br>
-
-        <input type="image" src="submit(3).png" alt="Submit" width="148" height="40" class="pull-right" style="margin-right: 20px; margin-bottom: 10px;">
-      </fieldset>
-
-    </form>
-
     <!-- RenderBody section -->
-    <section>
+    <section id="sectionCreatePatient">
+      <div>
+        <h2 class="headerNewPatient">Input form</h2>
+      </div>
+      <form action="./patient.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Patient details</legend>
+
+          <label id="nameLabel">Name</label>
+          <input type="text" id="name" name="name" placeholder="Oana Raluca Alexandru">
+          <label id="dateLabel">Date</label>
+          <input type="text" id="date" name="date" placeholder="06/02/2020"><br><br>
+
+          <label id="addressLabel">Address</label>
+          <input type="text" id="address" name="address" placeholder="str. Florilor"><br><br>
+
+          <label id="cityLabel">City</label>
+          <input type="text" id="city" name="city" placeholder="Cluj-Napoca">
+          <label id="countryLabel">County</label>
+          <input type="text" id="country" name="country" placeholder="CJ">
+          <label id="zipCodeLabel">Zip Code</label>
+          <input type="text" id="zipCode" name="zipCode" placeholder="420024"><br><br>
+
+          <label id="emailLabel">Email</label>
+          <input type="email" id="email" name="email" placeholder="oana.alexandru@gmail.com">
+          <label id="sexLabel">Sex</label>
+          <label>F</label>
+          <input type="radio" class="sex" name="sex" value="female" checked="checked">
+          <label>M</label>
+          <input type="radio" class="sex" name="sex" value="male"><br><br>
+
+          <label id="phoneLabel">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="0264380636">
+          <label id="mobileLabel">Mobile</label>
+          <input type="text" id="mobile" name="mobile" placeholder="0752102930">
+          <label id="cnpLabel">CNP</label>
+          <input type="text" id="cnp" name="cnp" maxlength="13"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend class="legendCaseDetails">Case details</legend>
+
+          <label id="nrLabel">Nr.</label>
+          <label id="codeLabel">Code</label>
+          <label id="shadeLabel">Shade</label>
+          <label id="numberTeethLabel">Number of Teeth</label><br>
+
+          <label class="number">1</label>
+          <input type="text" class="code" name="code" placeholder="AML1278">
+          <input type="text" class="shade" name="shade" placeholder="3M3.5">
+          <input type="number" class="numberTeeth" name="numberTeeth" min="1" placeholder="4"><br>
+
+          <label class="number2">2</label>
+          <input type="text" class="code" name="code" placeholder="AML1278">
+          <input type="text" class="shade" name="shade" placeholder="3M3.5">
+          <input type="number" class="numberTeeth" name="numberTeeth" min="1" placeholder="1"><br>
+
+          <label class="number2">3</label>
+          <input type="text" class="code" name="code" placeholder="AML1278">
+          <input type="text" class="shade" name="shade" placeholder="3M3.5">
+          <input type="number" class="numberTeeth" name="numberTeeth" min="1" placeholder="16"><br><br>
+
+          <label id="categoryLabel">Category</label>
+          <select name="category">
+            <option value="0" disabled="disabled" selected>No category</option>
+            <option value="1">Bridge</option>
+            <option value="2">Removable</option>
+            <option value="3">Single Unit</option>
+            <option value="4">Bridge Pontic</option>
+            <option value="5">Bridge Crown</option>
+            <option value="6">Missing Tooth</option>
+          </select>
+          <label id="restorationLabel">Restoration Type</label>
+          <select name="restorationType">
+            <option value="0" selected>No restoration type</option>
+            <option value="1">Crown Over Natural Abutment</option>
+            <option value="2">Crown Over Implant</option>
+            <option value="3">Corono-Radicular</option>
+            <option value="4">Veneer</option>
+            <option value="5">Inlay</option>
+            <option value="6">Onlay</option>
+            <option value="6">Temporary Single Unit Over Natural Abutment</option>
+            <option value="6">Temporary Single Unit Over Natural Implant</option>
+            <option value="6">Single Unit Wax-Up On Natural Abutment</option>
+            <option value="6">Single Unit Wax-Up On Natural Implant</option>
+          </select><br><br>
+
+          <label id="teethLabel">Teeth</label>
+          <select name="teeth" id="teeth" size="5" multiple>
+            <option value="1">Upper Third Molar</option>
+            <option value="2">Upper Second Molar</option>
+            <option value="3" selected>Upper First Molar</option>
+            <option value="4">Upper Second Premolar"</option>
+            <option value="5">Upper First Premolar</option>
+            <option value="6">Upper Canine</option>
+            <option value="6">Upper Lateral Incisor</option>
+            <option value="6">Upper Central Incisor</option>
+            <option value="6">Lower Third Molar</option>
+            <option value="6">Lower Second Molar</option>
+            <option value="6">Lower First Molar</option>
+            <option value="6">Lower Second Premolar</option>
+            <option value="6">Lower First Premolar</option>
+            <option value="6">Lower Lateral Incisor</option>
+            <option value="6">Lower Central Incisor</option>
+          </select><br><br>
+
+          <label id="commentLabel">Comment</label>
+          <textarea rows="5" cols="89" name="comment" id="comment" placeholder="Please enter details about the new case"></textarea><br><br>
+
+          <label id="importantLabel">Important</label>
+          <textarea rows="1" cols="89" readonly>For all the employees. When you add a new patient please be careful what shade you choose.</textarea>
+
+          <input type="image" src="submit(3).png" alt="Submit" width="148" height="40" class="pull-right" id="imageSubmit">
+        </fieldset>
+      </form>
+    </section>
 
     <!-- Footer -->
-   <footer>
+   <footer id="footerCreatePatient">
        <a href="#top" title="TO TOP">
            <span class="glyphicon glyphicon-chevron-up"></span>
        </a>
        <br/>
        <p>Made By Oana Ujica: <a href="https://codingwithoana.wordpress.com/" title="Visit codingwithoana.wordpress.com" target="_blank" type="text/html">codingwithoana.wordpress.com</a></p>
        <p>
-         <a href="https://validator.w3.org/nu/?doc=http://www.scs.ubbcluj.ro/~poci0205/lab1/patient.html" title="Site verified" target="_blank">W3C Validator</a>
+         <a href="https://validator.w3.org/nu/?doc=http://www.scs.ubbcluj.ro/~poci0205/lab2/createPatient.html" title="Site verified" target="_blank">W3C Validator</a>
        </p>
    </footer>
 
