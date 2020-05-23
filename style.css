@@ -127,3 +127,188 @@ legend {
   background-color: #1E90FF;
   opacity:0.8;
 }
+
+#nameLabel {
+   padding-left: 15px;
+   padding-right: 25px;
+}
+
+#name {
+   width: 400px;
+}
+
+#dateLabel {
+   padding-left: 40px;
+   padding-right: 10px;
+}
+
+#addressLabel {
+   padding-left: 15px;
+   padding-right: 10px;
+}
+
+#address {
+   width: 648px;
+}
+
+#cityLabel {
+   padding-left: 15px;
+   padding-right: 40px;
+}
+
+#city {
+   width: 260px;
+}
+
+#countryLabel {
+   padding-left: 20px;
+   padding-right: 10px;
+}
+
+#country {
+   width: 44px;
+}
+
+#zipCodeLabel {
+   padding-left: 15px;
+   padding-right: 4px;
+}
+
+#zipCode {
+   width: 160px;
+}
+
+#emailLabel {
+   padding-left: 15px;
+   padding-right: 26px;
+}
+
+#email {
+   width: 400px;
+}
+
+#sexLabel {
+   padding-left: 50px;
+   padding-right: 10px;
+}
+
+.sex {
+   margin-right: 20px;
+}
+
+#phoneLabel {
+   padding-left: 15px;
+   padding-right: 23px;
+}
+
+#phone {
+   width: 155px;
+}
+
+#mobileLabel {
+   padding-left: 20px;
+   padding-right: 12px;
+}
+
+#mobile {
+   width: 155px;
+}
+
+#cnpLabel {
+   padding-left: 46px;
+   padding-right: 6px;
+}
+
+#cnp {
+   width: 160px;
+}
+
+#categoryLabel {
+   padding-left: 15px;
+   padding-right: 9px;
+}
+
+#restorationLabel {
+   padding-left: 60px;
+   padding-right: 10px;
+}
+
+#teethLabel {
+   padding-left: 15px;
+   padding-right: 32px;
+}
+
+#commentLabel {
+   padding-left: 15px;
+   padding-right: 2px;
+}
+
+#importantLabel {
+  padding-left: 15px;
+  padding-right: 0px;
+}
+
+#imageSubmit {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.headerNewPatient {
+  margin-left: 396px;
+}
+
+#sectionCreatePatient {
+  margin-bottom: 100px;
+}
+
+#footerCreatePatient {
+   position: static;
+   padding-top: 6px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #5F9EA0;
+   color: white;
+   text-align: center;
+   opacity: 0.8;
+}
+
+#nrLabel {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#codeLabel {
+  padding-left: 35px;
+  padding-right: 140px;
+}
+
+#shadeLabel {
+  padding-right: 140px;
+}
+
+#numberTeethLabel {
+  padding-left: 126px;
+}
+
+.number {
+  padding-left: 20px;
+  padding-right: 60px;
+}
+
+.number2 {
+  padding-left: 20px;
+  padding-right: 58px;
+}
+
+.code {
+  width: 175px;
+}
+
+.shade {
+  width: 310px;
+}
+
+.numberTeeth {
+  width: 156px;
+}
