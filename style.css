@@ -1,5 +1,12 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url('./tooth.jpg');
+  margin: 0;
+  padding: 0;
 }
 
 .headerInfo {
@@ -60,19 +67,88 @@ footer {
 img {
   margin-top: 170px;
   margin-left: 40px;
-  border-radius: 60px;
+  border-radius: 30px;
   opacity: 0.6;
 }
 
 .image {
   width: 25%;
   float: left;
+  width: calc(25%);
 }
 
 .navigation {
   margin-top: 230px;
   width: 260px;
   float: left;
+  width: calc(15%);
+}
+
+.sprites {
+  position: relative;
+  top: 700px;
+  right: 706px;
+}
+
+.spriteImage {
+  width: 30px;
+  height: 30px;
+  border: 1px solid silver;
+  display: inline-block;
+  border-radius: 8px;
+  background: url('sprites(5).png') no-repeat;
+}
+
+.socialMedia1 {
+    background-size: 310px;
+    background-position: 0px -28px;
+}
+
+.socialMedia2 {
+    background-size: 310px;
+    background-position: -84px -28px;
+}
+
+.socialMedia3 {
+    background-size: 310px;
+    background-position: -113px -28px;
+}
+
+.socialMedia4 {
+    background-size: 310px;
+    background-position: -141px -28px;
+}
+
+.socialMedia5 {
+    background-size: 310px;
+    background-position: -169px -28px;
+}
+
+.socialMedia6 {
+    background-size: 310px;
+    background-position: -197px -28px;
+}
+
+.socialMedia7 {
+    background-size: 310px;
+    background-position: -225px -28px;
+}
+
+.socialMedia8 {
+    background-size: 310px;
+    background-position: -254px -28px;
+}
+
+@media (max-width:900px){
+	.image{
+		width:calc(25%);
+	}
+
+	.navigation{
+    margin-top: 230px;
+    width: 260px;
+		width:calc(15%);
+	}
 }
 
 table {
