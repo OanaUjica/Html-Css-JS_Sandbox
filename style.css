@@ -53,17 +53,6 @@ li a:hover {
   opacity: 0.4;
 }
 
-footer {
-   position: fixed;
-   padding-top: 6px;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #5F9EA0;
-   color: white;
-   text-align: center;
-   opacity: 0.8;
-}
 
 img {
   margin-top: 170px;
@@ -340,23 +329,30 @@ legend {
   width: calc( 100% - 40px);
 }
 
-.spriteHover {
-  position:absolute;
-  float: right;
-  width: calc( 100% );
-  width: 100px;
-  height: 100px;
-  border: 1px solid silver;
-  border-radius: 8px;
-  background: url('sprites(5).png') no-repeat;
-  background-size: 1060px;
-  background-position: 2px -95px;
+footer {
+   position: fixed;
+   padding-top: 6px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #5F9EA0;
+   color: white;
+   text-align: center;
+   opacity: 0.8;
 }
 
 .sprites {
   position: absolute;
-  height: 140px;
-  width: 100%;
+  bottom: 80px;
+  margin: 10px;
+}
+
+.screen
+{
+  position: absolute;
+  bottom: 60px;
+  margin: 10px;
+  content: url(./sprite.png);
 }
 
 .spriteImage {
@@ -368,24 +364,9 @@ legend {
   background: url('sprites(5).png') no-repeat;
 }
 
-@keyframes move {
-	100% { left: 0px; margin-bottom: 10px; }
-}
-
 .socialMedia1 {
     background-size: 310px;
     background-position: 0px -28px;
-}
-
-div.spriteImage.socialMedia1:hover {
-  animation: move 12s;
-  width: 100px;
-  height: 100px;
-  border: 1px solid silver;
-  border-radius: 8px;
-  background: url('sprites(5).png') no-repeat;
-  background-size: 1060px;
-  background-position: 2px -95px;
 }
 
 .socialMedia2 {
@@ -421,4 +402,44 @@ div.spriteImage.socialMedia1:hover {
 .socialMedia8 {
     background-size: 310px;
     background-position: -254px -28px;
+}
+
+.socialMedia1:hover~.screen
+{
+  content: url(./sprite.png);
+}
+
+.socialMedia2:hover~.screen
+{
+  content: url(./pic.png);
+}
+
+.socialMedia3:hover~.screen
+{
+  content: url(./in.png);
+}
+
+.socialMedia4:hover~.screen
+{
+  content: url(./pinterest.png);
+}
+
+.socialMedia5:hover~.screen
+{
+  content: url(./picture.png);
+}
+
+.socialMedia6:hover~.screen
+{
+  content: url(./skype.png);
+}
+
+.socialMedia7:hover~.screen
+{
+  content: url(./twitter.png);
+}
+
+.socialMedia8:hover~.screen
+{
+  content: url(./vimeo.png);
 }
